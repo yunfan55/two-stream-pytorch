@@ -71,5 +71,5 @@ if __name__ == '__main__':
     vid_list = glob.glob(src_path+'/*/*.'+ext)
     print(len(vid_list))
     pool = Pool(num_worker)
-    pool.map(run_optical_flow, zip(vid_list, xrange(len(vid_list))))
+    pool.map(run_optical_flow, zip(vid_list, range(len(vid_list))))
 
